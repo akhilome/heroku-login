@@ -1,0 +1,15 @@
+name: "Heroku Login"
+description: "Login to the Heroku CLI"
+inputs:
+  heroku_email:
+    description: "Heroku Login Email"
+    required: true
+  heroku_api_key:
+    description: "Heroku API Key"
+    required: true
+outputs:
+  status:
+    description: "Login Status"
+runs:
+  using: "node12"
+  main: "index.js"
