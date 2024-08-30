@@ -1,12 +1,18 @@
 {
   "name": "heroku-login",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Action to login to Heroku CLI",
-  "main": "release/index.js",
+  "main": "index.js",
   "repository": "git@github.com:akhilome/heroku-login.git",
   "author": "Kizito Akhilome <kizito@akhilo.me>",
   "license": "MIT",
+  "scripts": {
+    "build": "ncc build ./index.js -m -o release"
+  },
   "dependencies": {
-    "@actions/core": "^1.4.0"
+    "@actions/core": "^1.10.1"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.1"
   }
 }

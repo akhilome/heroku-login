@@ -11,5 +11,5 @@ outputs:
   status:
     description: "Login Status"
 runs:
-  using: "node12"
+  using: "node20"
   main: "release/index.js"
