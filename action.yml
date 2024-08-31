@@ -1,11 +1,11 @@
 name: "Heroku Login"
 description: "Login to the Heroku CLI"
 inputs:
-  heroku_email:
+  email:
     description: "Heroku Login Email"
     required: true
-  heroku_api_key:
-    description: "Heroku API Key"
+  api-token:
+    description: "Heroku API OAuth Token"
     required: true
 outputs:
   status:
